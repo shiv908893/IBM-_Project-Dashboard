@@ -46,5 +46,6 @@ $env:PYTHONPATH = $projectDir
 Set-Location $projectDir
 
 Write-Host "Launching AI Data Analyst dashboard on http://localhost:$selectedPort"
+Write-Host "Open the URL above in your browser. Press Ctrl+C in this terminal to stop the dashboard."
 Start-Process "http://localhost:$selectedPort"
 & $streamlitExe run app/app.py --server.address 0.0.0.0 --server.port $selectedPort

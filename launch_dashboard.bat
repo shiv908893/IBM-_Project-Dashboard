@@ -1,2 +1,3 @@
 @echo off
-PowerShell -ExecutionPolicy Bypass -File "%~dp0launch_dashboard.ps1"
+cd /d "%~dp0"
+PowerShell -NoLogo -NoProfile -NoExit -ExecutionPolicy Bypass -File "%~dp0launch_dashboard.ps1"
